@@ -24,9 +24,13 @@ a {
 
 /* HEADER */
 header {
-    position: relative;
+    width : 100%;
     background-color: #f6f5f0;
     border-bottom: 1px solid #c8c8c8;
+    /* position fixed와 absolute의 경우에는 
+    가로 너비가 최소한으로 줄어들려고 한다.
+    따라서 width값을 100%로 지정해주어야 한다. */
+    position: fixed;
 }
 
 header>.inner {
@@ -230,7 +234,7 @@ header .main-menu .item .item__contents .contents__texture p {
 
 header .badges {
     position: absolute;
-    /* header에 position:relative를 입력해서 위치(HTML)상의 부모가 됨. */
+    /* header에 position:fixed를 입력해서 위치(HTML)상의 부모가 됨. */
     top: 132px;
     right: 12px;
 

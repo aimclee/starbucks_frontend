@@ -18,3 +18,10 @@ searchInputEl.addEventListener('blur', function(){
     // 속성의 이름, 속성 값
     searchInputEl.setAttribute('placeholder', '');
 });
+
+const badgeEl = document.querySelector('header .badges');
+
+// 화면 자체 = window
+window.addEventListener('scroll', function(){
+    console.log('scroll!');
+});
